@@ -6,18 +6,16 @@ export default class record extends React.Component {
         this.state={
             value:   ''
         };
-        console.log({props}, props.type);
         this.handleChange = this.handleChange.bind(this);
     };
 
     sendData = (value, type) => {
-        this.props.parentCallback(this.state.value, type);
+        this.props.parentCallback(value, type);
 
     };
     handleChange(event , param){
-            console.log({event}, 'handlechange triggered at input from child component')
             this.setState({value: event.target.value});
-            this.sendData(this.state.value,this.props.type);
+            this.sendData(event.target.value,this.props.type);
 
     }
     render() {

@@ -57,3 +57,10 @@ footer {
   display: flex;
   align-items: center;
 }
+.flex-it{
+  display:  flex;
+  align-items: center;
+}
+header{
+  padding-bottom: 10px;
+}

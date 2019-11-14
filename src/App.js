@@ -28,9 +28,9 @@ class App extends React.Component {
                       </ul>
                   </nav>
                   <header className="App-header">
-                  <Switch>
+                      <Presentation />
+                      <Switch>
                       <Route path="/home">
-                          <Presentation />
                       </Route>
                       <Route path="/" exact={true}>
                           <Presentation />
