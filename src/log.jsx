@@ -15,35 +15,34 @@ export default class Log extends React.Component {
     }
 
     fireLog() {
-
         if (this.state.firstName || this.state.lastName) {
-            let person = {};
-            person.firstName = this.state.firstName;
-            person.lastName = this.state.lastName;
-            console.log({person});
+            let firstName = this.state.firstName;
+            let lastName = this.state.lastName;
+            console.log({firstName, lastName});
         }
     }
 
     fireLogStyle() {
-        console.todo = function(msg) {
+        console.todo = function (msg) {
+            //String substitutions %s %i %o=object %f =float
             console.log('%c %s %s %s', 'color: yellow; background-color: black;', '--', msg, '--');
         };
-        console.important = function(msg){
+        console.important = function (msg) {
             console.log('%c %s %s %s', 'color: brown; font-weight: bold; text-decoration: underline;', '--', msg, '--');
         }
         if (this.state.firstName || this.state.lastName) {
             let stylistPerson = {};
             stylistPerson.firstName = this.state.firstName;
             stylistPerson.lastName = this.state.lastName;
-            let str = stylistPerson.firstName + ' ' +stylistPerson.lastName
+            let str = stylistPerson.firstName + ' ' + stylistPerson.lastName
             console.todo(str);
             console.important(str);
         }
     }
 
     callbackFunction = (childData, type) => {
-        type === 'person.firstName' ? this.setState({firstName: childData}) :
-            type === 'person.lastName' ? this.setState({lastName: childData}) :
+        type === 'firstName' ? this.setState({firstName: childData}) :
+            type === 'lastName' ? this.setState({lastName: childData}) :
                 this.setState({age: childData});
 
     };
@@ -58,8 +57,8 @@ export default class Log extends React.Component {
                 <h4>object person;</h4>
                 <div className={"log-input"}>
                 </div>
-                <Record parentCallback={this.callbackFunction} type="person.firstName"/>
-                <Record parentCallback={this.callbackFunction} type="person.lastName"/>
+                <Record parentCallback={this.callbackFunction} type="firstName"/>
+                <Record parentCallback={this.callbackFunction} type="lastName"/>
                 {/*<Record parentCallback={this.callbackFunction} type="age"/>*/}
                 <div className='flex-it'>
                     <button onClick={this.fireLog}>Fire Log</button>

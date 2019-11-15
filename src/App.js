@@ -3,6 +3,7 @@ import './App.css';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Presentation from './presentation'
 import Log from './log'
+import TableAssert from './table-assert'
 
 class App extends React.Component {
 
@@ -20,7 +21,7 @@ class App extends React.Component {
                               <Link to="/log">Log</Link>
                           </li>
                           <li >
-                              <Link to="/header">Header</Link>
+                              <Link to="/table-assert">Table|Assert</Link>
                           </li>
                           <li >
                               <Link to="/todoclass">Todo</Link>
@@ -37,6 +38,9 @@ class App extends React.Component {
                       </Route>
                       <Route path="/log">
                           <Log />
+                      </Route>
+                      <Route path="/table-assert">
+                          <TableAssert />
                       </Route>
                   </Switch>
                 </header>
