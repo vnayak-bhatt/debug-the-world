@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default class time extends React.Component {
+export default class Time extends React.Component {
     constructor(props) {
         super(props);
         this.state = {

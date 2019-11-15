@@ -5,6 +5,7 @@ import Presentation from './presentation'
 import Log from './log'
 import TableAssert from './table-assert'
 import Time from './time'
+import Group from './group'
 
 class App extends React.Component {
 
@@ -28,7 +29,7 @@ class App extends React.Component {
                                     <Link to="/time">Time|TimeEnd</Link>
                                 </li>
                                 <li>
-                                    <Link to="/todoclass">Todo</Link>
+                                    <Link to="/group">Group</Link>
                                 </li>
                             </ul>
                         </nav>
@@ -47,6 +48,9 @@ class App extends React.Component {
                                 </Route>
                                 <Route exact={true} path="/time">
                                     <Time/>
+                                </Route>
+                                <Route exact={true} path="/group">
+                                    <Group />
                                 </Route>
                             </Switch>
                         </header>
