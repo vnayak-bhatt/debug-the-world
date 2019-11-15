@@ -7,6 +7,7 @@ import TableAssert from './table-assert'
 import Time from './time'
 import Group from './group'
 import TraceCount from './trace-count'
+import WarnError from './warn-error'
 
 class App extends React.Component {
 
@@ -17,9 +18,7 @@ class App extends React.Component {
                     <div className="App">
                         <nav>
                             <ul>
-                                <li>
-                                    <Link to="/home">Home</Link>
-                                </li>
+
                                 <li>
                                     <Link to="/log">Log</Link>
                                 </li>
@@ -35,13 +34,14 @@ class App extends React.Component {
                                 <li>
                                     <Link to="/trace-count">Trace|Count</Link>
                                 </li>
+                                <li>
+                                    <Link to="/warn-error">Warn|Error</Link>
+                                </li>
                             </ul>
                         </nav>
                         <header className="App-header">
                             <Presentation/>
                             <Switch>
-                                <Route path="/home">
-                                </Route>
                                 <Route path="/" exact={true}>
                                 </Route>
                                 <Route path="/log">
@@ -58,6 +58,9 @@ class App extends React.Component {
                                 </Route>
                                 <Route exact={true} path="/trace-count">
                                     <TraceCount />
+                                </Route>
+                                <Route exact={true} path="/warn-error">
+                                    <WarnError />
                                 </Route>
                             </Switch>
                         </header>

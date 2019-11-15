@@ -52,9 +52,6 @@ export default class Log extends React.Component {
 
         return (
             <React.Fragment>
-                <h1>LOG Component</h1>
-                <h2>Console.log</h2>
-                <h4>object person;</h4>
                 <div className={"log-input"}>
                 </div>
                 <Record parentCallback={this.callbackFunction} type="firstName"/>

@@ -21,7 +21,7 @@ export default class Time extends React.Component {
         let sum = 0;
         for (let i = 1; i <= this.state.value; i++) {
             if (i === this.state.value / 2) {
-                console.timeLog('for', 'test');
+                console.timeLog('for', 'timeLog');
             }
             sum += i;
         }

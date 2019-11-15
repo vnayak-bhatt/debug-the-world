@@ -22,8 +22,9 @@ export default class TableAssert extends React.Component {
             {name: 'V-Nayak', project: 'Caseyun', id: 57},
         ];
         console.log({team});
-        console.table(team, ['name']);
-        console.table({name: 'Balgopal', project: 'Denthub', id: 11})
+        console.table(team);
+        // console.table(team, ['name']);
+        console.table({name: 'V-Nayak', project: 'Caseyun', id: 57})
     }
 
     handleA() {
@@ -45,18 +46,22 @@ export default class TableAssert extends React.Component {
     }
     render() {
         let conditionVar
-        this.state.condition ? conditionVar = <button onClick={this.handleAssert}>true</button> : conditionVar =<button onClick={this.handleAssert}>false</button>;
+        this.state.condition ? conditionVar = <button onClick={this.handleAssert}>toggle true</button> : conditionVar =<button onClick={this.handleAssert}>toggle false</button>;
 
             return (
                 <React.Fragment>
                     <h1>table</h1>
+                    <div className="flex-it">
                     <button onClick={this.handleAOB}>Array of Objects</button>
                     <button onClick={this.handleA}>Array</button>
+                    </div>
                     <h1>-----------------------------------------</h1>
                     <h1>Assert</h1>
                     <input onChange={this.handleInput}/>
+                    <div className="flex-it">
                     {conditionVar}
                     <button onClick={this.fireAssert}>fire Assert</button>
+                    </div>
                     </React.Fragment>
             );
     }
