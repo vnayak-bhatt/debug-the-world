@@ -35,7 +35,7 @@ export default class time extends React.Component {
         let displaySum = this.state.total;
         return (
             <React.Fragment>
-                <h1>For loop to </h1>
+                <h1>For loop to calculate the sum</h1>
                 <input onChange={this.handleInput}/>
                 <button onClick={this.handleClick}>run loop</button>
                 sum = {displaySum}
