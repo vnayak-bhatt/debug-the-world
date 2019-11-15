@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default class tableAssert extends React.Component {
+export default class TableAssert extends React.Component {
     constructor(props) {
         super(props);
         console.log('assert log component');

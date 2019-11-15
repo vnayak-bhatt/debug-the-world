@@ -6,6 +6,7 @@ import Log from './log'
 import TableAssert from './table-assert'
 import Time from './time'
 import Group from './group'
+import TraceCount from './trace-count'
 
 class App extends React.Component {
 
@@ -31,6 +32,9 @@ class App extends React.Component {
                                 <li>
                                     <Link to="/group">Group</Link>
                                 </li>
+                                <li>
+                                    <Link to="/trace-count">Trace|Count</Link>
+                                </li>
                             </ul>
                         </nav>
                         <header className="App-header">
@@ -51,6 +55,9 @@ class App extends React.Component {
                                 </Route>
                                 <Route exact={true} path="/group">
                                     <Group />
+                                </Route>
+                                <Route exact={true} path="/trace-count">
+                                    <TraceCount />
                                 </Route>
                             </Switch>
                         </header>
