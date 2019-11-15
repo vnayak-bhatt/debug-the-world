@@ -56,7 +56,6 @@ export default class Log extends React.Component {
                 </div>
                 <Record parentCallback={this.callbackFunction} type="firstName"/>
                 <Record parentCallback={this.callbackFunction} type="lastName"/>
-                {/*<Record parentCallback={this.callbackFunction} type="age"/>*/}
                 <div className='flex-it'>
                     <button onClick={this.fireLog}>Fire Log</button>
 
