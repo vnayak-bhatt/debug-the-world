@@ -1,3 +1,7 @@
+This is a project developed to emphasize the console API, most of the developers only and only use log functionality of this API,
+but there is lots more to it.
+It includes an embedded PPT also for better presentation and understanding.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
