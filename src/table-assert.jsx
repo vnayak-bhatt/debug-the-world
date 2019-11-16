@@ -23,8 +23,8 @@ export default class TableAssert extends React.Component {
         ];
         console.log({team});
         console.table(team);
-        // console.table(team, ['name']);
-        console.table({name: 'V-Nayak', project: 'Caseyun', id: 57})
+        // console.table(team, ['name', 'project']);
+        // console.table({name: 'V-Nayak', project: 'Caseyun', id: 57})
     }
 
     handleA() {
@@ -41,7 +41,7 @@ export default class TableAssert extends React.Component {
         this.state.condition ? this.setState({condition: false}) : this.setState({condition: true});
     }
     fireAssert(){
-        console.assert(this.state.condition , this.state.value + this.state.condition);
+        console.assert(this.state.condition , this.state.value + "fired when condition is" + this.state.condition);
 
     }
     render() {

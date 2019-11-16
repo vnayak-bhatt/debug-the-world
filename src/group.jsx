@@ -8,17 +8,15 @@ export default class Group extends React.Component {
     }
 
     fireLog(){
-        let test = 121;
-        console.info( test);
-        console.log('tesdasdat');
-
         console.log('-----------------------------------------');
         console.log("This is the zero level");
         console.group("First group");
         console.log("In the first level group");
         console.groupCollapsed("Second group");
         console.log("In the second level group");
-        console.warn("Still in the second level group");
+        console.group('third group')
+        console.warn("in the third group");
+        console.groupEnd()
         console.groupEnd();
         console.log("Back to the first level group");
         console.groupEnd();

@@ -17,16 +17,16 @@ export default class Time extends React.Component {
 
     handleClick(e) {
         console.log('time started')
-        console.time('for');
+        console.time('forloop');
         let sum = 0;
         for (let i = 1; i <= this.state.value; i++) {
             if (i === this.state.value / 2) {
-                console.timeLog('for', 'timeLog');
+                console.timeLog('forloop', i, 'timeLog');
             }
             sum += i;
         }
         this.setState({total: sum})
-        console.timeEnd('for');
+        console.timeEnd('forloop');
         console.log('time ended')
 
     }
