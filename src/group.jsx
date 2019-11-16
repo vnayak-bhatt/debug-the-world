@@ -8,6 +8,10 @@ export default class Group extends React.Component {
     }
 
     fireLog(){
+        let test = 121;
+        console.info( test);
+        console.log('tesdasdat');
+
         console.log('-----------------------------------------');
         console.log("This is the zero level");
         console.group("First group");
@@ -23,10 +27,10 @@ export default class Group extends React.Component {
 
     render() {
         return (
-            <React.Freagment>
+            <React.Fragment>
                 <h1> group component</h1>
                 <button onClick={this.fireLog}>Group Log Example</button>
-            </React.Freagment>
+            </React.Fragment>
         );
     }
 }
