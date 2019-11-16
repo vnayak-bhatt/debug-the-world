@@ -62,6 +62,7 @@ class App extends React.Component {
                                     <WarnError />
                                 </Route>
                             </Switch>
+                            {/*<button onClick={()=>console.clear()}>Clear</button>*/}
                         </header>
                         <footer>
                             Created by : Vinayak Yuvraj Bhatt (Software Developer and JS enthusiast)

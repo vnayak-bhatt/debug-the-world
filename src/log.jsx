@@ -10,6 +10,7 @@ export default class Log extends React.Component {
             age: undefined,
         };
 
+        this.log = this.log.bind(this);
         this.fireLog = this.fireLog.bind(this);
         this.fireLogStyle = this.fireLogStyle.bind(this);
     }
@@ -21,10 +22,17 @@ export default class Log extends React.Component {
             console.log({firstName, lastName});
         }
     }
+    log() {
+        if (this.state.firstName || this.state.lastName) {
+            let firstName = this.state.firstName;
+            let lastName = this.state.lastName;
+            console.log(firstName, lastName);
+        }
+    }
 
     fireLogStyle() {
         console.todo = function (msg) {
-            //String substitutions %s %i %o=object %f =float
+            //String substitutions %s %i %o %O=object %f=float
             console.log('%c %s %s %s', 'color: yellow; background-color: black;', '--', msg, '--');
         };
         console.important = function (msg) {
@@ -57,8 +65,8 @@ export default class Log extends React.Component {
                 <Record parentCallback={this.callbackFunction} type="firstName"/>
                 <Record parentCallback={this.callbackFunction} type="lastName"/>
                 <div className='flex-it'>
+                    <button onClick={this.log}>Log</button>
                     <button onClick={this.fireLog}>Fire Log</button>
-
                     <button onClick={this.fireLogStyle}>Do it With Style</button>
 
                 </div>
