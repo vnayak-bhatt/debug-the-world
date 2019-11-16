@@ -18,7 +18,6 @@ class App extends React.Component {
                     <div className="App">
                         <nav>
                             <ul>
-
                                 <li>
                                     <Link to="/log">Log</Link>
                                 </li>
