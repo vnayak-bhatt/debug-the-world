@@ -1,5 +1,5 @@
 {
-  "name": "debug-the-world",
+  "name": "debug-the-worlds",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -8,7 +8,7 @@
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.2.0"
   },
-  "homepage": "http://vnayak-bhatt.github.io/debug-the-world",
+  "homepage": "http://vnayak-bhatt.github.io/debug-the-worlds",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
