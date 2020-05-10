@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/debug-the-world/static/css/main.ad91ed7d.chunk.css",
+    "main.js": "/debug-the-world/static/js/main.18c741c7.chunk.js",
+    "main.js.map": "/debug-the-world/static/js/main.18c741c7.chunk.js.map",
+    "runtime-main.js": "/debug-the-world/static/js/runtime-main.1e8e6378.js",
+    "runtime-main.js.map": "/debug-the-world/static/js/runtime-main.1e8e6378.js.map",
+    "static/js/2.b6888558.chunk.js": "/debug-the-world/static/js/2.b6888558.chunk.js",
+    "static/js/2.b6888558.chunk.js.map": "/debug-the-world/static/js/2.b6888558.chunk.js.map",
+    "index.html": "/debug-the-world/index.html",
+    "precache-manifest.d2a003ffeae7cfecfe69862a6405f38a.js": "/debug-the-world/precache-manifest.d2a003ffeae7cfecfe69862a6405f38a.js",
+    "service-worker.js": "/debug-the-world/service-worker.js",
+    "static/css/main.ad91ed7d.chunk.css.map": "/debug-the-world/static/css/main.ad91ed7d.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1e8e6378.js",
+    "static/js/2.b6888558.chunk.js",
+    "static/css/main.ad91ed7d.chunk.css",
+    "static/js/main.18c741c7.chunk.js"
+  ]
+}
